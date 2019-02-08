@@ -1,0 +1,27 @@
+* {
+    color: green;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+body {
+    background-color: rgba(0, 19, 54, 0.993);
+}
+
+h1 {
+    font-size: 200% ;
+    color: white;
+    font-family: 'Fahkwang';
+}
+
+h2 {
+    font-size: 75%;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}

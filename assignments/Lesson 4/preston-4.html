@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weatherbuddy | CIT 230 Lesson 4 | Weather and Forum</title>
+        <meta name="description" content="Weather site with a forum">
+        <link href="https://fonts.googleapis.com/css?family=Fahkwang|Major+Mono+Display|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="C:\Users\User\Desktop\Github\Adamfly123.github.io\assignments\Lesson 4\css\small-4.css">
+    </head>
+    <body>
+        <h1>Weatherbuddy</h1>
+        <h2>Friendly Weather</h2>
+        <!--Weather-->
+        <a class="weatherwidget-io" href="https://forecast7.com/en/46d21n119d16/99336/?unit=us" data-label_1="KENNEWICK" data-label_2="Weatherbuddy" data-font="Open Sans" data-theme="dark">KENNEWICK Weatherbuddy</a>
+        <script>
+            !function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'weatherwidget-io-js');
+        </script>
+        <!---Navigation-->
+        <nav class="w3-bar w3-black">
+            <a href="#home" class="w3-button w3-bar-item">Home</a>
+            <a href="#faqs" class="w3-button w3-bar-item">Information</a>
+            <a href="#shop" class="w3-button w3-bar-item">Shop</a>
+            <a href="#help" class="w3-button w3-bar-item">Help</a>
+            <a href="#forum" class="w3-button w3-bar-item">Forum</a>
+            <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
+        </nav>
+        <!-- Slide Show -->
+        <section>
+            <img class="Slideshow" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/NATURAL_WEATHER.jpg" style="width:100%" alt="https://commons.wikimedia.org/w/index.php?title=User:Amit.khodiyar&action=edit&redlink=1">
+            <img class="Slideshow" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Dszpics1.jpg" style="width:100%">
+            <img class="Slideshow" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Appearance_of_sky_for_weather_forecast%2C_Dhaka%2C_Bangladesh.JPG" style="width:100%" alt=https://en.wikipedia.org/wiki/User:TawsifSalam>
+        </section>
+        <script>
+            // Automatic Slideshow - change image every 10 seconds
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("Slideshow");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 10000);
+            }
+        </script>
+    </body>
+</html>
